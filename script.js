@@ -1,15 +1,13 @@
 const sampleObject = { red: "#FF0000", green: "#00FF00", white: "#FFFFFF" };
 
 function hasKey(key) {
-  //   write your code here
-	for(const sampleKey of sampleObject)
-		{
-			if(sampleKey === key)
-			{
-				return true;				
-			}
-		}
-	return false;
+  //   write your code here  
+if (key in  sampleObject ) {
+	return true;
+}  
+else{
+	return false; 
+}
 }
 
 
